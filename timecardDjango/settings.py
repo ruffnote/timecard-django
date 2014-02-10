@@ -13,9 +13,12 @@ import os
 import socket
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
+APP_ROOT = BASE_DIR + '/app/'
+STATIC_ROOT = APP_ROOT + 'static/'
+
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'i$(v(26%9n0_s2hdk3fra5a#ex33yn!zgst)xejj-xbm3nugmi'
@@ -41,7 +44,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app',
-    'south'
+    'south',
+    'static_precompiler'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -90,6 +94,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'static_precompiler.finders.StaticPrecompilerFinder',
+)
+
+STATIC_PRECOMPILER_COMPILERS = {
+    "static_precompiler.compilers.CoffeeScript",
+    "static_precompiler.compilers.SCSS",
+}
+STATIC_PRECOMPILER_ROOT = STATIC_ROOT
+STATIC_PRECOMPILER_USE_CACHE = True
 
 try:
     from local_settings import *
