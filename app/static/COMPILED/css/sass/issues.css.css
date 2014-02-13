@@ -1,0 +1,35 @@
+.issues .issue .wrap {
+  border: 1px solid #dddddd;
+  box-shadow: 0 0 5px #dddddd;
+  margin-top: 20px; }
+.issues .issue .header {
+  padding: 10px; }
+  .issues .issue .header .issue-author b {
+    color: #999999; }
+.issues .issue .author {
+  margin-bottom: 5px; }
+.issues .issue .assignee {
+  background-color: #ecf0f1;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px; }
+.issues .issue .status {
+  margin-bottom: 5px; }
+.issues .issue .description {
+  padding: 10px; }
+  .issues .issue .description h1, .issues .issue .description h2 {
+    margin-top: 0; }
+  .issues .issue .description p:last-child {
+    margin-bottom: 0; }
+.issues .issue .actions {
+  margin-bottom: 20px;
+  padding: 10px; }
+.issues b.back-to-project, .issues b.back-to-issue {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 20px; }
+.issues #new_issue .input-area, .issues .edit_issue .input-area {
+  border: 1px solid #eeeeee;
+  box-shadow: 0 0 5px #cccccc;
+  margin-bottom: 20px;
+  padding: 20px; }

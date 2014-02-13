@@ -1,0 +1,16 @@
+.comment-area .comment {
+  border: 1px solid #dddddd; }
+.comment-area .comment-header {
+  background-color: #ecf0f1;
+  border-bottom: 1px solid #dddddd;
+  padding: 5px 10px; }
+  .comment-area .comment-header .comment-author {
+    font-weight: bold; }
+  .comment-area .comment-header .actions li {
+    float: left;
+    list-style-type: none;
+    margin: 0 5px; }
+.comment-area .comment-content {
+  padding: 10px; }
+  .comment-area .comment-content p:last-child {
+    margin-bottom: 0; }

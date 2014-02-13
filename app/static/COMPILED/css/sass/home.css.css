@@ -1,0 +1,11 @@
+.home .nav-pills {
+  margin-bottom: 15px; }
+.home .welcome {
+  text-align: center; }
+  .home .welcome .jumbotron {
+    background-color: #ffffff; }
+    .home .welcome .jumbotron .btn-block {
+      margin: 20px 0; }
+  .home .welcome h2 {
+    color: #555555;
+    font-weight: normal; }

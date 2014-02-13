@@ -1,0 +1,6 @@
+.users ul.info {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .users ul.info li {
+    margin: 0 0 10px 0; }
