@@ -1,0 +1,8 @@
+.projects .project-header {
+  position: relative; }
+.projects .project-actions {
+  position: absolute;
+  top: 0;
+  right: 0; }
+.projects form {
+  margin-bottom: 15px; }
